@@ -1,3 +1,4 @@
+
 # pyrogineer EX
 pyrogineer EX is a redux of [a redux](https://forums.alliedmods.net/showthread.php?p=2708112) of [a plugin](https://forums.alliedmods.net/showthread.php?t=282110) that allows pyro to maintain engineer buildings with the homewrecker as if it were a wrench. extra focus was placed on making sure the mechanics behind the wrench features were as accurate to engineer's as possible, to create a consistent gameplay experience.
 
@@ -18,18 +19,25 @@ every class besides engineer has **100 metal** by default - including pyro. the 
 values in `[brackets]` are the default for the CVAR
 ##### upgrading & leveling
 `sm_pyrogineer_allow_upgrade <0/[1]>` - whether or not pyros should be allowed to contribute upgrade progress to buildings.
+
 `sm_pyrogineer_allow_levelup <0/[1]>` - if this is set to 0 but allow upgrade is set to 1, pyros can only upgrade buildings to 200/200 and an engineer must hit the building to upgrade it. if a building is at 200/200, engineers can upgrade it with a single hit even with 0 metal.
+
 `sm_pyrogineer_upgrade_rate <20>` - how much metal to contribute to a building every swing. note that just like engineer, this is doubled during setup time and mannpower mode.
 ##### repairing
 `sm_pyrogineer_allow_repair <0/[1]>` - allows pyro to heal buildings. sentries and dispensers cost 1 metal per 3 HP, and teleporters cost 1 metal per 5 HP.
+
 `sm_pyrogineer_repair_rate <45>` - target HP to contribute to buildings. engineer's value is 100, for comparison. note that this rounds up - a value of 100 heals 102 for sentries/dispensers, just like engineer.
 ##### construction boosting
 `sm_pyrogineer_allow_buildspeed <0/[1]>` - allows pyro to construction-boost buildings to build them faster.
+
 `sm_pyrogineer_build_speed_mult <1.0>` - how much construction boost to add to constructing buildings. engineer's value is 1.5. note that build speed is ADDITIVE, not multiplicative. a value of 1.0 essentially is a -33% build speed penalty from stock wrench. for comparison, eureka effect is 0.75, and jag is 1.95.
 ##### restocking sentries
 `sm_pyrogineer_allow_restock <0/1/[2]>` - whether or not pyros should be allowed to restock ammo to sentryguns. 0 = not at all, 1 = bullets only, 2 = bullets + rockets
+
 `sm_pyrogineer_restock_bullets <30>` - how many shells (bullets) to restock per swing. engineer's value is 40, lv.1/mini sentries have a capacity of 150, lv.2/lv.3 have 200. 1 shell costs 1 metal. (same as engineer)
+
 `sm_pyrogineer_restock_rockets <4>` - how many rockets to restock per swing. engineer's value is 8. lv.3 sentries hold up to 20 rockets. rockets cost 2 metal each. (same as engineer)
 ##### misc
 `sm_pyrogineer_neon_annihilator <[0]/1>` - if enabled, the neon annihilator will also be given wrench capability. otherwise, it's only granted to the homewrecker/maul.
+
 `sm_pyrogineer_alertsound <0/[1]>` - if enabled, when a building takes damage for the first time after being at full health, it'll play the HUD alert sound that can be heard by nearby pyros wielding a homewrecker.
