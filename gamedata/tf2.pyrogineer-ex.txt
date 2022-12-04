@@ -1,0 +1,25 @@
+"Games"
+{
+	"tf"
+	{
+		"Keys"
+		{
+			"StartProp"		"m_bMatchBuilding"
+		}
+		
+		"Offsets"
+		{
+			"MatchingTeleporterOffset"
+			{
+				"windows"	"4"
+				"linux"		"4"
+			}
+			
+			"CBaseObject::GetConstructionMultiplier" //value FLOAT (construction mult)
+			{
+				"windows"	"350"
+				"linux"		"352"
+			}
+		}
+	}
+}
